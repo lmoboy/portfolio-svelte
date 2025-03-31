@@ -2,8 +2,6 @@
   // @ts-nocheck
   import { injectSpeedInsights } from "@vercel/speed-insights/sveltekit";
   import { injectAnalytics } from "@vercel/analytics/sveltekit";
-  injectAnalytics();
-  injectSpeedInsights();
 
   import { onMount } from "svelte";
   import { fade, fly, slide } from "svelte/transition";
@@ -56,6 +54,12 @@
   currentPage.subscribe((value) => {
     currentPageValue = value;
   });
+
+
+
+  
+  injectAnalytics();
+  injectSpeedInsights();
 </script>
 
 <div class="h-full bg-[#0f0f1a] text-white main-content">
