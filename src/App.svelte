@@ -1,7 +1,5 @@
 <script>
   // @ts-nocheck
-  import { injectSpeedInsights } from "@vercel/speed-insights/sveltekit";
-  import { injectAnalytics } from "@vercel/analytics/sveltekit";
 
   import { onMount } from "svelte";
   import { fade, fly, slide } from "svelte/transition";
@@ -58,8 +56,6 @@
 
 
   
-  injectAnalytics();
-  injectSpeedInsights();
 </script>
 
 <div class="h-full bg-[#0f0f1a] text-white main-content">
